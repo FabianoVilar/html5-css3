@@ -1,0 +1,6 @@
+
+body {
+  background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png'); /*No caso de um link externo, a imagem só estará disponível enquanto o endereço de origem a manter hospedada na página. O Background-image tem como padrão a repetição de elementos da imagem*/
+  background-size: 100px 100px;/*configura o tamanho das imagens. Se aumentar ou diminuir a Viewport a extrutura da imagem não sofrerá alteração*/
+  background-repeat: no-repeat;/*essa propriedade bloqueia a repetição da imagem. Pode ser usado, também, o repeat-x (faz a repetição da imagem na horizontal) e o repeat-y (faz a repetição da imagem na vertical)*/
+}

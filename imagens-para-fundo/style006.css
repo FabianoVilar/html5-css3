@@ -1,0 +1,18 @@
+
+body {
+  height: 96vh;
+  background-color: black;/* é ideal configurar uma cor de fundo quando for utilizar uma imagem*/
+  background-image: url('imagens/wallpaper002.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;/* a propriedade contain faz com que a imagem seja 100% exibida na tela, porém, ela não cobrirá todo o espaço na tela. Já a cover irá cobrir todo o espaço da tela com 100% da imagem exibida*/
+}
+
+main {
+  background-color: white;
+  width: 400px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid darkblue;
+  border-radius: 15px;
+}

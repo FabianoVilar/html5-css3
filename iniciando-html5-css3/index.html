@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+    <!--Tag para indicar a língua escrita no site-->
+<html lang="pt-br">
+<head>
+        <!--A tag "UTF-8" é de codificação que suporta acentuação-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--A tag "viewport" indica que o a tela do site ficará 100% disponível-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Tag usada para inserir o favicon ícone da página-->
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <title>G2D Tech</title>
+</head>
+<body>
+        <!--Tags para hierarquia de Títulos-->
+    <h1>Título</h1>
+    <h2>Título</h2>
+    <h3>Título</h3>
+    <h4>Título</h4>
+    <h5>Título</h5>
+    <h6>Título</h6>
+        <!--A tag hr insere uma linha na página-->
+    <hr>
+
+        <!--Tag para Parágrafo-->
+    <p>Parágrafo</p>
+
+        <!--A tag br serve para quebrar a linha (mudar de linha)-->
+        <!--OBS. para quebrar linha com um espaço maior "nunca" utilizar <br><br><br><br> ... deve-se utilizar o CSS pra isso-->
+    <p>Quebra de linha <br> daqui em diante</p>
+
+        <!--As tags &lt (less than) e &gt (grater than) são usadas para mostrar os sinais de maior que e menor que-->
+    <p>Mostrando o menor que e maior que no texto &lt;h1&gt;</p>
+
+        <!--Tag de imagem na mesma pasta (src= arquivo da imagem) e (alt= texto alternativo) Atalho= Ctrl + espaço-->       
+    <img src="imagem1.jpg" alt="Imagem de chaveiro"><br>
+
+        <!--Tag de imagem que estão na sub-pasta (pasta2) (src= origem da imagem/arquivo da imagem) e (alt= texto alternativo) Atalho= Ctrl + espaço-->
+    <img src="pasta2/imagem2.jpg" alt="Imagem de chaveiro 2">
+
+        <!--Tag para carregar imagens externas: entrar na imagem, botão direito e copiar como endereço da imagem (url), colar em src-->
+    <img src="https://cdn.iset.io/assets/00751/produtos/900/thumb_400-400-chaveiro-pais-modelo4.png" alt="Imagem de chaveiro 3">
+
+        <!--A tag <address> deixa o endereço que está entre elas em destaque-->
+    <p>Eu moro na <address>Rua dos Capixabas, 229 - Botafogo - RJ</address></p>
+
+        <!--para colocar frase em negrito usar a tag <b></b> (tag não semântica)-->
+    <p>Principais formatações = para colocar uma frase em negrito <b>usa-se a tag b</b></p>
+
+        <!-- Para usar o destaque em negrito (tag semântica) usar a tag <strong></strong>-->
+    <p>para colocar uma frase em negrito <strong>usa-se a tag strong</strong>
+
+        <!--Tag <i> para itálico (não semântica)-->
+    <p>nesta frase temos uma parte em <i>itálico, ou ênfase,</i> usando a tag I</p>
+
+        <!--Tag <em> para ênfase (semântica)-->
+    <p>nesta frase temos uma parte em <em>itálico, ou ênfase,</em> usando a tag EM</p>
+
+        <!--Tag <mark> para usar marca texto-->
+    <p>podemos criar também um <mark>texto marcado</mark> usado a tag MARK</p>
+
+        <!--Colocando cor no marca texto via CSS pela tag <mark style="background-color: aqua;">-->
+    <p>podemos criar também um <mark style="background-color: rgb(88, 235, 235);">texto marcado</mark> usado a tag MARK</p>
+
+        <!--Não se usa mais a tag big para texto grande. Para texto pequeno pode-se usar a tag small-->
+    <p>estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo</p>
+
+        <!--Para riscar uma palavra/texto que deseja excluir basta usar a palavra <del>-->
+    <p>podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+
+        <!--Para dar ênfase a uma palavra/texto basta usar a tag <ins> que ficará sublinhado-->
+    <p>podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois</p>
+
+        <!--a tag U não é usada mais, pois ela não é semântica-->
+    <p>existe também os <u>sublinhados com a tag U</u> que não é semântica</p>
+
+        <!--Para fazer um texto "sobrescrito", como x20 (x elevado a 20), usa-se a tag <sup>-->
+    <p>para inserir coisas do tipo x<sup>20</sup> + 3</p>
+
+        <!--Para fazer um texto "subscrito", como H2O (fórmula da água), usa-se a tag <sub>-->
+    <p>para inserir coisas como do tipo H<sub>2</sub>O</p>
+
+        <!--Para utilizar uma fonte monoespaçada (ótima para leitura de códigos) basta utilizar a tag <code>-->
+    <p>Código-fonte = o comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+
+    <!--Exemplo de organização do código <code> em Python sem identação-->
+    <code>
+        num = int(input('Digite um número'))
+        if num % 2 == 0
+            print(f'O número {num} é par')
+        else:
+            print(f'O número {num} é ímpar')
+    </code>
+
+    <!--Exemplo de organização do código <code> em Python com identação dentro da tag <pre>-->
+        <pre>
+            <code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0
+                    print(f'O número {num} é par')
+                else:
+                    print(f'O número {num} é ímpar')
+            </code>
+        </pre>
+
+        <!--Para colocar aspas em uma citação usa-se a tag <q>-->
+    <p>Citações simples (sem quebras de linha) = como diria o pai de uma amigo meu: <q>o computador é um burro muito rápido</q></p>
+    
+        <!--A tag <blockquote> apresenta a citação de maneira destacada, na outra linha e com espaçamento. Da mesma forma o parâmetro "Cite" permite aos mecanismos de busca do google a identificarem que esta citação refere-se ao livro que está disponível dentro deste parâmetro-->
+    <p>Citações completas = segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Construindo_Web_Sites_Para_Leigos_Tradu/xlLcAwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+        Este não é apenas outro livro de Web design. É especial. Sério! Eu comecei a escrever o livro que gostaria de ter ao meu lado se estivesse querendo montar um Web site legal e não gastar muito fazendo isso.
+    </blockquote>
+    
+    <!--A tag <abbr> permite que o usuário passe o mouse em cima das abreveações para que o navegador mostre a definição desta abreveação-->
+    <p>Abreveações = estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.</p>
+
+    <!--Usamos a tag <ol> para as listas ordenadas e a tag <li> para apresentar a lista. O fechamento da tag </li> torna-se opcional a partir do HTML5-->
+    <p>Listas Ordenadas (aquelas em que a ordem faz diferença) = </p>
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li>        
+    </ol>
+
+    <!--Podemos personalizar a numeração da lista com o parâmetro Type="". Podemos personalizar com 1, a, A, I e i(números romanos)Obs. Podemos completar com o parâmetro star="" após o type para indicar a partir de qual numeração gostaríamos de iniciar a lista-->
+    <p>Listas Ordenadas (aquelas em que a ordem faz diferença) = </p>
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os dentes</li> 
+        <li>Ir para a faculdade</li>       
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+
+    <!--Usamos a tag <ul> para as listas ordenadas e a tag <li> para apresentar a lista. O fechamento da tag </li> torna-se opcional a partir do HTML5-->
+    <p>Listas Não Ordenadas (onde não seja necessário uma sequência)</p>
+    <ul>
+        <li>Comprar pão</li>
+        <li>Comprar Leite</li>
+        <li>Comprar tomate</li>
+        <li>Comprar manteiga</li>
+        <li>Comprar arroz</li>
+        <li>Comprar feijão</li>
+    </ul>
+
+    <!--Podemos personalizar a numeração da lista não ordenada com o parâmetro Type="". Podemos personalizar com ("disc", "circle", "square").-->
+    <p>Listas Não Ordenadas (onde não seja necessário uma sequência)</p>
+    <ul type="square">
+        <li>Comprar pão</li>
+        <li>Comprar Leite</li>
+        <li>Comprar tomate</li>
+        <li>Comprar manteiga</li>
+        <li>Comprar arroz</li>
+        <li>Comprar feijão</li>
+    </ul>
+
+    <!--Misturas de listas ordenadas e não ordenadas-->
+    <p>Juntando listas versão 1.0 - Minhas linguagens favoritas</p>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <!--Misturando listas ordenadas "com" não ordenadas (muito utilizados para Menus)-->
+    <p>Meus jogos favoritos</p>
+    <ol>
+        <li>NES</li>
+        <ul>
+            <li>Mario Bros</li>
+            <ul>
+                <li>Mario Bros 3</li>
+                <li>Mario Bros Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul>
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul>
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <!--Tag <dl> para apresentação de termos e definições-->
+    <p>Listas de definições (dt = termo e dd = descrição)</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para o conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para o design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    <!--Os links externos são links que usamos externamente, ou seja, que não é nosso. Com a tag <a> é pedido o parâmetro href (referência de hipertexto, que significa para o onde o site irá) -->
+    <!--Obs. Quando se tratar de link externo é recomendável usar os parâmetros (target="_blank" rel="external"). Eles permitem que abra uma nova aba no navegador. Caso contrário o link sobrepõe a aba do site. Visualizar a diferença no link do gitHub-->
+    <p>Usando links esternos - você pode acessar o meu <a href="https://github.com/FabianoVilar" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/@fabianoribeirovilargarcia6503">canal gratuito no YouTube</a></p>
+    
+    <!--Para os links internos é necessário usar o valor do arquivo da página e sua extensão (pag002.html) no parâmetro href. O parâmetro target="_self (na própria aba) vc está dizendo que é para abrir a página sem ser em uma nova aba."-->
+    <p>Usando links internos - Faz a ligação com a nossa própria página. </p>
+    <p>Esta é a primeira página do meu site. Caso queira, pode acessar também minha <a href="pag002.html" real="next" target="_self"> segunda página.</a></p>
+    <!--Neste caso abaixo a terceira página está dentro de outra pasta, portanto o caminho começa com o nome da página noticias/ tendo a seguir o arquivo da pagina 003-->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+    <p>Para aproximar um algoritmo de outro é preciso que você tenha feito um upgrade aleatório em escalonamento. Neste caso temos uma porta de acesso para o alvo de upgrade sem que ele quebre o protocolo TCP/IP. Mesmo que isso ocorra um bug dentro do Sistema Operacional. </p>
+
+    <!--A hashtag # é colocada para quando ainda não se tem um link para colocar no parâmentro. No href do pdf ele abre uma página com o pdf. Já no href do zip, com o parâmetro type="application/zip" faz o download do arquivo-->
+    <p>links para downloads</p>
+    <ul>
+        <li><a href="livro/Readequação de Planilha orcamentaria - Baby dance - a dança dos afetos.pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/Readequação de Planilha orcamentaria - Baby dance - a dança dos afetos.zip" type="application/zip">Livro compactado em Zip</a></li>
+    </ul>
+
+    <h2>MULTIPLAS IMAGENS PARA TAMANHO DE TELAS DIFERENTES</h2>
+
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <!--A tag <picture> parece uma imagem, porém ela permite que você crie vários soucers, várias fontes.-->
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/arquivo-300x300.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/arquivo-700x700.png" type="image/png">
+            <img src="imagens/arquivo-1000x1000.png" alt="Imagem maior (flexível)">
+        </picture>
+
+        <h1>Reproduzindo Áudios</h1>
+
+        <p>Vamos aprender a reproduzir áudis em HTML5</p>
+        <!--Abaixo está a primeira maneira de reproduzir um áudio no site, porém é um pouco limitado, pois depende do navegador para reproduzir as extensões do arquivo-->
+        <audio src="midia/midia1.mp3" controls autoplay></audio>
+
+        <audio>
+            <source src="midia/midia1.mp3" type="">
+        </audio>
+
+        <h1>Reproduzindo Vídeos</h1>
+        
+        <!--Os formatos de vídeos mais usados são o MP4, MKV, Webm e OGV-->
+        <!--Dica: programa " HandBrake: Open Source Video Transcoder" para conversão de vídeos-->
+
+        <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>Este vídeo está hospedado em meu próprio servidor</p>
+
+        <video src="midia-video/meu-video.mp4" width="300" controls></video>
+
+        <h2>Vídeos em va´rias extensões</h2>
+
+        <!--Obs. Importante: é aconselhável colocar as 4 extensões afim de que possa abrir em todos os navegadores. Nesse caso é feita da seguinte maneira abixo.
+        Porém, desta forma transfere muito tráfego de banda.-->
+        <!--A propriedade poster coloca uma imagem na tela do vídeo-->
+
+        <video width="300" poster="imagens/videos-helo.png" controls>
+    
+            <source src="midia-video/meu-video.mp4" type="video/mp4">
+            <source src="midia-video/meu-video.ogv" type="video/ogv">
+            <source src="midia-video/Meu-Video.webm" type="video/webm">
+            <source src="midia-video/Meu-Video.mkv" type="video/mkv">
+            <p>Seu navegador não tem compatibilidade com a reprodução desses vídeos.</p>
+
+            <!--Para fazer o vídeo iniciar automaticamente e fazer ele reiniciar ao terminar basta colocar o autoplay e looop, desta forma: <video width="300" poster="imagens/videos-helo.png" controls autoplay loop>-->
+
+        </video>
+
+        <h1>Incorporando vídeo externos</h1>
+
+        <!--Para incorporar um vídeo basta encontrar o vídeo, entrar em compartilhar, incorporar e copiar o código html. Abaixo um código do vídeo do youtube. Mas também existe outro repositório como o youtube chamado "vimeo.com.". Neste é possível escolher se quer liberar o vídeo público ou somente para assinantes-->
+
+        <iframe width="300" height="315" src="https://www.youtube.com/embed/fuqjTEd_r6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</body>
+</html>

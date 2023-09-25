@@ -1,0 +1,25 @@
+/*Para o font-size nós temos as medidas absolutas (cm, mm, in (polegada), px, pt, pc (paica))e medidas relativas (em (tamanho atual da fonte), ex (altura x de uma fonte), rem (igual ao em, mas relativo ao root, fonte configurada no body), vw (largura da viewport, tela), vh (altura da viewport) e %).
+Obs. As medidas recomendadas pela w3school são " px e em ". Lembrando que "em" trabalha com porcentagem e, por conta disso, é melhor para visualização em tamanhos diferentes de telas.*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;/*tamanho padrão*/
+}
+
+#peso {
+  font-family: 'Work Sans', sans-serif; 
+  font-weight: bolder;/*peso da fonte (os valores aceitos para esse atributo são: lighter, normal, bold e bolder) ou as opções de 100 a 900.*/
+  font-style: italic;
+  text-decoration: underline;/*sobrinhado*/
+}
+
+.peso {
+font-family: 'Work Sans', sans-serif;
+font-weight: bolder;
+font-size: 2em;
+font-style: italic;
+/* shorthand (dar uma mãozinha). O shorthand para simplicar o código para as 4 fontes acima é: colocando na ordem font: font-style -> font-weight -> font-size -> font-family. Veja em peso2 abaixo*/
+}
+
+.peso2 {
+  font: italic bolder 2em 'Work Sans', sans-serif;
+}

@@ -1,0 +1,28 @@
+
+div {
+  display: inline-block;
+  background-color: lightgray;
+  border: 1px solid black;
+  text-align: center;
+  height: 200px;/*altura*/
+  width: 200px;/*largura*/
+}
+
+/* As Pseudo-classes é um estado de um determinado elemento. Precisam estarem relacionadas a um elemento ou a uma classe e são representadas por ":" (dois pontos)*/
+
+/*A pseudo-classe houver significa que quando passar o mouse em cima do elemento marcado este mudará a cor de background*/
+div:hover {
+  background-color: chartreuse;
+}
+
+#d1 {
+  
+}
+
+#d2 {
+
+}
+
+#d3 {
+
+}

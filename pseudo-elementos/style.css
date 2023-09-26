@@ -1,0 +1,51 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: darkred;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a:active {
+  color: yellow;
+}
+
+/*Pseudo-elemento é representado por :: (dois pontos duas vezes)*/
+/*avisar que depois dos links (a) eu quero que esteja a palavra link.*/
+/*Pode-se colocar antes ou depois do link ícones, que você pode pegar no site (https://erikasarti.com/html/dingbats-simbolos-desenhos/).*/
+/*Também pode-se criar uma classe com o nome de especial, nesse caso ficaria desta forma:
+.especial::before
+.especial::afeter*/
+
+/*resumo de simbologia neste capítulo para criação de seletores personalizados:
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> = children*/
+
+a::before {
+  content: '✪ ';
+  text-decoration: none;
+  font-weight: normal;
+  color: darkgray;
+}
+
+a::after { 
+  content: ' ✪';
+  text-decoration: none;
+  font-weight: normal;
+  color: darkgray;
+}

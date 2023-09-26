@@ -1,0 +1,67 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+  margin: 0px;
+}
+
+header {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav {
+  background-color: rgb(128, 128, 128);
+  padding: 3px;
+  box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.466);/*(deslocamento horizontal, deslocamento vertical, espalhamento, sombra). A cor da sombra é sempre preto, mas é necessário colocar opacidade*/
+}
+
+nav > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  /*border-radius: 20px; raio da borda (as 4 bordas arredondada)*/
+  border-radius: 15px 0px;/*o primeiro valor cima e baixo e o segundo valor dos lados*/
+  box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.445);
+}
+
+article {
+  background-color: lightgray;
+  padding: 5px;
+}
+
+article > aside {
+  background-color: rgb(175, 175, 175);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  margin: 0px;
+}
+
+footer > p {
+  margin: 0px;
+}
+
+#bola {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 50%;
+}

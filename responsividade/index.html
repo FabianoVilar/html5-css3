@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Teste de Responsividade</title>
+
+  <style>
+
+    body {
+      background-color: gray;
+    }
+
+    main {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+
+      min-width: 320px;
+      max-width: 1000px;
+      margin: auto;
+
+    }
+
+    img {
+      width: 100%;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <h1>Testanto Responsividade</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat odit fuga delectus explicabo, atque quas maxime optio nam error? Harum est debitis placeat molestiae omnis, voluptatem repellat assumenda unde? Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      <!--Abaixo está o recurso de responsividade do picture, que consiste em diminuir a mesma imagem, criando uma outra menor, e depois acrescentá-la em source.-->
+      <picture>
+        <source media="(max-width: 600px)" srcset="imagens/imagem-visao-responsivo.jpg">
+        <img src="imagens/imagem-visao.jpg" alt="">
+      </picture>
+    Neque ea dolorum debitis, reprehenderit hic sequi voluptatum officiis est nobis consequatur sint explicabo obcaecati rem mollitia? Officiis et quas nisi a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt necessitatibus voluptates nihil reiciendis atque, explicabo magni nobis? Ab repudiandae amet eveniet vitae quidem! Voluptatum incidunt officiis nihil quia harum!</p>
+    
+  </main>
+  
+</body>
+
+</html>

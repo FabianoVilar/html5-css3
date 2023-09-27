@@ -4,13 +4,18 @@ body {
   background-color: black;/* é ideal configurar uma cor de fundo quando for utilizar uma imagem*/
   background-image: url('imagens/wallpaper002.jpg');
   background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;/* a propriedade contain faz com que a imagem seja 100% exibida na tela, porém, ela não cobrirá todo o espaço na tela. Já a cover irá cobrir todo o espaço da tela com 100% da imagem exibida*/
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: cover;/* a propriedade contain faz com que a imagem seja 100% exibida na tela, porém, ela não cobrirá todo o espaço na tela. Já a cover irá cobrir todo o espaço da tela com 100% da imagem exibida. IMPORTANTE: A combinação de background-attachment cover com background-attachment: fixed permite que a caixa seja responsivo, adaptando o conteúdo na medida que diminui o seu tamanho*/
+
+  /* Shorthand - background é usado na seguinte ordem: color > image > position > repeat > [size não entra nos navegadores, apesar de na documentação do W3C apontar sua entrada] > attachment. Ex: 
+  background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+  background-size: cover. */
 }
 
 main {
   background-color: white;
-  width: 400px;
+  max-width: 400px;
   padding: 10px;
   margin: auto;
   border: 1px solid darkblue;

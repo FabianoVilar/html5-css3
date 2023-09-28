@@ -1,13 +1,26 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: 'Passion One', cursive;
+  --fonte3: 'Sriracha', cursive;
+}
+
 * { /*configuração geral para resetar todos os elementos*/
   margin: 0px;
   padding: 0px;
+  font-size: 1em;
 }
 
 html, body {
-  min-height: 100vh; /* 100% do tamanho mínimo do corpo da viewport*/
+  min-height: 100vh; /* 100% do tamanho mínimo do corpo da (vh viewport height)*/
   background-color: darkgray;
+  font-family: var(--fonte1);
 }
 
 header {
@@ -20,6 +33,8 @@ header > h1 {
   padding-top: 50px;
   font-variant: small-caps; /* transforma as letras em maiúscula, porém as primeiras de cada palavra ficam maiores.*/
   /* Já o text-transform: uppercase; transforma todas as letras em maiúscula*/
+  font-family: var(--fonte2);
+  font-size: 9vw; /* 10% da largura da tela (vw viewport width). Esta aplicação permite que ao aumentar a tela o h1 também aumente, ao diminuir o h1 tb diminui.*/
 }
 
 header > p {
@@ -41,6 +56,8 @@ section {
   padding-bottom: 10vh; /* 10% */
   line-height: 2em; /* altura entre as linhas */
   padding-left: 30px; 
+  font-family: var(--fonte3);
+  font-size: 3.5vw;
 }
 
 section.normal {
@@ -54,8 +71,9 @@ section.imagem {
 }
 
 section.imagem > p {
+  display: inline-block; /* transforma a caixa no tamanho do conteúdo*/
   background-color: rgba(0, 0, 0, 0.253);
-  width: 400px;
+  padding: 5px;
 }
 
 footer {

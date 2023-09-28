@@ -1,2 +1,29 @@
 @charset "UTF-8";
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 400px;
+  border-collapse: collapse; /* tira o espaço entre as células*/
+  border: 5px solid red;
+}
+
+tr {
+  background-color: rgba(0, 139, 139, 0.377);
+}
+
+tr.linha {
+  background-color: chartreuse;
+}
+
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+td.dado {
+  background-color: darkorange;
+}

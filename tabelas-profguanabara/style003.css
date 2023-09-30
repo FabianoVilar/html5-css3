@@ -7,12 +7,18 @@ body {
 table {
   width: 500px;
   border-collapse: collapse;
+  position: relative; /*configuração comportamental para poder fixar o cabeçalho da tabela*/
 }
 
 caption {
   font-size: 1.5em;
   font-weight: bold;
   padding: 10px;
+  background-color: lightgray;
+}
+
+/* Colocando efeito zebrado na tabela. A pseudoclasse tr:nth-child(2n) significa que o efeito será marcado uma linha sim outra não. Também pode-se utilizar 3n, pula duas e marca uma, 4n pula 3 e marca uma e assim por diante. Se colocarmos no lugar a palavra "odd" ou (2n-1), o efeito zebrado ocorrerá nas linhas ímpares. Para a palavra "even" ou (2n), para linhas pares.*/
+tbody > tr:nth-child(2n) {
   background-color: lightgray;
 }
 
@@ -23,6 +29,13 @@ caption {
 td, th {
   border: 1px solid black;
   padding: 10px;
+}
+
+/* Abaixo, configuração de estilo para fixar o cabeçalho da tabela. IMPORTANTE: este recurso não funciona em todos os navegadores. Para o google chrome sim.*/
+thead > tr > th {
+  position: sticky;
+  top: -1px;
+  background-color: gray;
 }
 
 thead, tfoot {

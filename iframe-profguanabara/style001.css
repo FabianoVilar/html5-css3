@@ -1,0 +1,9 @@
+
+
+/* Mesmo que tanhamos configurado largura e altura das iframes no html, se configurarmos pelas CSS, esta será soberana.*/
+
+iframe {
+  width: 400px;
+  height: 400px;
+  border: 1px dashed black; /*a borda do iframe pode ser personalizada*/
+}

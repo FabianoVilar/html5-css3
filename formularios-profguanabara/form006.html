@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Formulários</title>
+
+</head>
+
+<body>
+  <h1>Exemplo de Formulários</h1>
+  <form action="cadastro.php" method="post" autocomplete="on">
+
+    <div>
+      <label for="icor">Cor:</label>
+      <input type="color" name="cor" id="icor" value="#00ff00"> <!--O atributo value é para deixar uma cor como padrão. OBS IMPORTANTE: os controles de cores também aparecerão de forma diferente de acordo com o navegador ou podem não ser reconhecido por eles-->
+    </div><br>
+
+    <div>
+      <label for="inivel">Nível de Satisfação:</label>
+      <input type="range" name="nivel" id="inivel" value="50"><!--Como padrão o nível começa em 0 e vai até 100. Mas podemos personalizar usando os atributos min="" e max="". O atributo value indica onde o nível começará. Sempre quando utilizarmos elementos que passem de 3000 bytes, devemos utilizar o método post-->
+    </div><br>
+
+    <div><!--Nesse caso, usamos o input file, pois este permite que o usuário possa escolher a imagem. O que não ocorre com o input image. OBS IMPORTANTE: Quando for utilizar esse tipo de controle de envio de arquivos, não podemos utilizar o método GET, precisa ser o método POST-->
+      <label for="ifoto">Foto do Perfil</label>
+      <input type="file" name="foto" id="ifoto">
+    </div><br>
+
+    <div>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </div>
+
+  </form>
+  
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Formulários</title>
+
+</head>
+
+<body>
+
+  <h1>Exemplo de Formulário</h1>
+  <form action="cadastro.php" method="get" autocomplete="on">
+
+    <label for="iest">Estado</label>
+    <select name="estado" id="iest">
+      <!--Obs. o label para a região sudeste e nordeste é um atributo, ao contrário do label elemento-->
+      <option value="" selected>--- Escolha ---</option><!--Para ter no box a opção de escolha, basta colocar o atributo selected e deixar o value vazio-->
+      <optgroup label="Região Sudeste">
+        <option value="MG">Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+      </optgroup>
+
+      <optgroup label="Região Nordeste">
+        <option value="MA">Maranhão</option>
+        <option value="PE">Pernambuco</option>
+        <option value="RN">Rio Grande do Norte</option>
+      </optgroup>
+
+    </select>
+
+    <div><br>
+      <label for="iprof">Profissão</label>
+      <input type="text" name="prof" id="iprof" list="lstprof"><!--O atributo list assim como as opções dentro da tag datalist permite que as opções das profissões apareçam dentro do box para o usuário. OBS IMPORTANTE: este código permite que o usuário, além de selecionar as profissões pré inscritas pelo programador, também digite uma profissão que não conste no box-->
+      <datalist id="lstprof">
+        <option>Administrador</option>
+        <option>Contador</option>
+        <option>Desenvolvedor</option>
+        <option>Professor</option>
+      </datalist>
+    </div><br>
+
+    <div>
+      <!--A tag textarea permite que o usuário digite mensagem dentro de uma área de box. Neste caso deve-se trabalhar com o method POST para não ter problema de limitação de caracteres-->
+      <label for="imsg">Mensagem:</label><br>
+      <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Envie sua mensagem"></textarea>
+    </div>
+
+    <div><br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </div>
+
+  </form>
+  
+</body>
+
+</html>
